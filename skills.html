@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="airdrops tokens cryptocurrency binance worldcoin">
+    <meta name="keyword" content="airdrops tokens cryptocurrency binance worldcoin">
+    <title>airdrops </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        .hero {
+            background: #222;
+            color: white;
+            padding: 50px 20px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+        .skill-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 300px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .skill-card i {
+            font-size: 40px;
+            color: #007bff;
+        }
+        .skill-card h3 {
+            margin-top: 10px;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="cat.png" alt="whoo">
+        <h1><i><B>Hapyjames</B></i></h1>
+        <div class="toggle">
+            <button class="mei" onclick="window.location.href='index.html'">home</button>
+            <button class="mei1" onclick="window.location.href='about.html'">about us</button>
+            <button class="mei2" onclick="window.location.href='skills.html'">skills</button>
+            <button class="mei3" onclick="window.location.href='services.html'">services</button>
+            <button class="mei4" onclick="window.location.href='contact.html'">contact</button>
+            
+        </div>
+
+    </header>
+    <main >
+        <h1>our skills include</h1>
+        <div class="hero">
+            <h1>Our Skills</h1>
+            <p>Mastering cutting-edge technologies to bring your ideas to life.</p>
+        </div>
+    
+        <div class="skills-container" id="skills">
+            <div class="skill-card"><i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Expertise in front-end and back-end development to build modern and responsive websites.</p>
+            </div>
+            <div class="skill-card"><i class="fas fa-laptop-code"></i>
+                <h3>Software Development</h3>
+                <p>Proficiency in building time counters, e-commerce platforms, and security-focused applications using Flask.</p>
+            </div>
+            <div class="skill-card"><i class="fas fa-paint-brush"></i>
+                <h3>Design</h3>
+                <p>Skilled in Adobe Photoshop for digital artwork and AutoCAD for architectural precision.</p>
+            </div>
+            <div class="skill-card"><i class="fas fa-microchip"></i>
+                <h3>IoT with Arduino</h3>
+                <p>Hands-on experience in developing smart automation and real-time monitoring systems.</p>
+            </div>
+            <div class="skill-card"><i class="fas fa-tools"></i>
+                <h3>Handyman Skills</h3>
+                <p>Expertise in painting, glass fixing, and tile installations for durable and aesthetic results.</p>
+            </div>
+        </div>
+        <div id="welcomeMessage" style="display: none; position: absolute; top: 20px; right: 20px; font-size: 18px; font-weight: bold; color: #007bff;"></div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const savedName = localStorage.getItem("subscriberName");
+                const welcomeMessage = document.getElementById("welcomeMessage");
+        
+                if (savedName) {
+                    const firstName = savedName.split(" ")[0];
+                    welcomeMessage.textContent = `Welcome back, ${firstName}!`;
+                    welcomeMessage.style.display = "block";
+                    welcomeMessage.style.marginTop = "100px";
+                }
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                const cards = document.querySelectorAll(".skill-card");
+                let delay = 0;
+                cards.forEach(card => {
+                    setTimeout(() => {
+                        card.style.opacity = "1";
+                        card.style.transform = "translateY(0)";
+                    }, delay);
+                    delay += 200;
+                });
+            });
+        </script>
+       
+        <div class="ra3">
+            <img src="adv.jpg" alt="whhop!!!">
+            <div class="ra">
+                <h1 id="wee">social media</h1>
+                <div class="yee">
+                    <div class="yee1">
+                        <a href="https://www.facebook.com/hapyjames.musire" target="_blank">
+                            <i class="fab fa-facebook">facebook</i>
+                        </a>
+                        <p>@ <strong>hapy james</strong> <br></p>
+                    </div>
+                    <div class="yee2">
+                        <a href="https://x.com/Hapyjames39198?t=_LUQxuQLNg2qdR01N5Gzgg&s=09" target="_blank">
+                            <i class="fab fa-twitter">twitter</i>
+                        </a>
+                        <p>@ <strong>hapy james</strong> <br></p>
+    
+                    </div>
+                    <div class="yee2">
+                        <a href="https://www.linkedin.com/in/hapy-james-646389283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                            <i class="fab fa-linkedin">linkedn</i>
+                        </a>
+                        <p>@<strong>hapyjames</strong> <br></p>
+    
+                    </div>
+
+                    <div class="yee2">
+                        <a href="https://youtube.com/@hapyjames-z?si=ph2bLiIlU8PNGald" target="_blank">
+                            <i class="fab fa-youtube">youtube</i>
+                        </a>
+                        <p>@ <strong>hapyjames</strong> <br></p>
+    
+                    </div>
+                    <div class="yee3">
+                        <a href="https://www.instagram.com/rhet.ke?igsh=MWZmaG83bzhv0Xgxag==" target="_blank">
+                            <i class="fab fa-instagram">instagram</i>
+                        </a>
+                        <p>@ <strong>hapy james</strong> <br></p>
+                    </div>
+                
+                </div>
+            </div>
+          
+          
+  
+        </div>
+
+    </main>
+
+</body>

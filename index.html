@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="electrical engineering, web development,software development, portfolio website">
+    <meta name="keyword" content="electrical engineering, web development,software development, portfolio website">
+    <title>electrical engineering, web development,software development, portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header id="tsp">
+        <img src="cat.png" alt="whoo">
+        <h1><i><B>Hapyjames</B></i></h1>
+        <div class="toggle">
+            <button class="mei" onclick="window.location.href='index.html'">home</button>
+            <button class="mei1" onclick="window.location.href='about.html'">about Us</button>
+            <button class="mei2" onclick="window.location.href='skills.html'">skills</button>
+            <button class="mei3" onclick="window.location.href='services.html'">services</button>
+            <button class="mei4" onclick="window.location.href='contact.html'">contact</button>
+            
+        </div>
+
+    </header>
+    <main>
+        <div class="yell">
+            
+            <h1> >>Bridging the gap between electrical engineering, IoT, and cutting-edge software development, I create smart, scalable solutions that power the future. From intelligent automation to dynamic web applications<br> <br></h1>
+            <img src="shu3.png" alt="whhop!!!">
+
+        </div>
+
+        <div class="yell2">
+            <img src="shu1.jpg" alt="whhop!!!">
+            <h1> I turn ideas into reality. Explore my work and discover how technology can transform possibilities into progress.I`m a bit of anomaly-an engineer who paints
+                .Intrigued? Let’s talk and innovate together!</h1>
+            
+        </div>
+        <div class="yoh">
+            
+            <h2><i>**The best solutions are often found at the intersection of disciplines .I dont just build websites ; i craft experiences
+                See how i connect the dots and discover the difference**</i></h2>
+
+        </div>
+        <div id="welcomeMessage" style="display: none; position: absolute; top: 20px; right: 20px; font-size: 18px; font-weight: bold; color: #007bff;"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const savedName = localStorage.getItem("subscriberName");
+                const welcomeMessage = document.getElementById("welcomeMessage");
+        
+                if (savedName) {
+                    const firstName = savedName.split(" ")[0];
+                    welcomeMessage.textContent = `Welcome back, ${firstName}!`;
+                    welcomeMessage.style.display = "block";
+                    welcomeMessage.style.marginTop = "100px";
+                }
+            });
+        </script>
+        <div class="ra3">
+            <img src="adv.jpg" alt="whhop!!!">
+            <div class="ra">
+                <h1 id="wee">social media</h1>
+                <div class="yee">
+                    <div class="yee1">
+                        <a href="https://www.facebook.com/hapyjames.musire" target="_blank">
+                            <i class="fab fa-facebook">facebook</i>
+                        </a>
+                        <p>@ <strong>hapyjames</strong> <br></p>
+                    </div>
+                    <div class="yee2">
+                        <a href="https://x.com/Hapyjames39198?t=_LUQxuQLNg2qdR01N5Gzgg&s=09" target="_blank">
+                            <i class="fab fa-twitter">twitter</i>
+                        </a>
+                        <p>@<strong>hapyjames</strong> <br></p>
+    
+                    </div>
+                    <div class="yee2">
+                        <a href="https://www.linkedin.com/in/hapy-james-646389283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                            <i class="fab fa-linkedin">linkedn</i>
+                        </a>
+                        <p>@<strong>hapyjames</strong> <br></p>
+    
+                    </div>
+
+                    <div class="yee2">
+                        <a href="https://youtube.com/@hapyjames-z?si=ph2bLiIlU8PNGald" target="_blank">
+                            <i class="fab fa-youtube">youtube</i>
+                        </a>
+                        <p>@ <strong>hapyjames</strong> <br></p>
+    
+                    </div>
+                    <div class="yee3">
+                        <a href="https://www.instagram.com/hapyjames.ke?igsh=MWZmaG83bzhvOXgxag==" target="_blank">
+                            <i class="fab fa-instagram">instagram</i>
+                        </a>
+                        <p>@ <strong>hapyjames</strong> <br></p>
+                    </div>
+                
+                </div>
+            </div>
+          
+          
+  
+        </div>
+
+    </main>
+</body>
+</html>
