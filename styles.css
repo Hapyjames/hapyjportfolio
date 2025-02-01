@@ -725,4 +725,31 @@
         border-radius: 20px;
         margin-bottom: 50px;
     }
+    .subscription-form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 250px;
+        margin: 20px auto;
+    }
+    .subscription-form input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .subscription-form button {
+        background: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .subscription-form button:hover {
+        background: rgb(5, 1, 32);
+    }
 }
